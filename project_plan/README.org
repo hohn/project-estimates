@@ -1,0 +1,11 @@
+* setup
+  #+BEGIN_SRC sh
+    conda create  -p project_plan
+    conda update -n base -c defaults conda
+    conda activate project_plan/
+    cd project_plan/
+    conda install jupyter
+    conda install numpy
+    pip install pertdist
+    jupyter notebook&
+  #+END_SRC
