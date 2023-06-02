@@ -4,8 +4,7 @@
     conda update -n base -c defaults conda
     conda activate project_plan/
     cd project_plan/
-    conda install jupyter
-    conda install numpy
+    conda install jupyter numpy pip seaborn
     pip install pertdist
     jupyter notebook&
   #+END_SRC
