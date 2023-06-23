@@ -1,10 +1,18 @@
-* setup
+* Setup
   #+BEGIN_SRC sh
+    cd ~/w/project-estimates
     conda create  -p project_plan
     conda update -n base -c defaults conda
-    conda activate project_plan/
+    conda activate project_plan
     cd project_plan/
-    conda install jupyter numpy pip seaborn
-    pip install pertdist
+    conda install jupyter numpy pip seaborn pygraphviz
+    pip install pertdist networkx
+    jupyter notebook&
+  #+END_SRC
+
+* Running
+  #+BEGIN_SRC sh :exports both :results output
+    cd ~/w/project-estimates/project_plan/
+    conda activate .
     jupyter notebook&
   #+END_SRC
